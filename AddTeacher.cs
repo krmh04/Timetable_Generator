@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace TimeTable_Generator
 {
-    public partial class MainForm : Form
+    public partial class AddTeacher : Form
     {
-        public MainForm()
+        public AddTeacher()
         {
             InitializeComponent();
 

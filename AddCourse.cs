@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace TimeTable_Generator
 {
-    public partial class Login : Form
+    public partial class AddCourse : Form
     {
-        public Login()
+        public AddCourse()
         {
-            BackColor = Color.FromArgb(82, 111, 190);
             InitializeComponent();
-        }
-
-        private void btn_login_Click(object sender, EventArgs e)
-        {
-
-            this.Hide();
-            Dashboard f = new Dashboard();
-            f.ShowDialog();
         }
     }
 }

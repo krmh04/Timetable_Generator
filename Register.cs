@@ -17,6 +17,7 @@ namespace TimeTable_Generator
         public Register()
         {
             InitializeComponent();
+
         }
         SqlConnection con = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
@@ -44,6 +45,9 @@ namespace TimeTable_Generator
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
                     MessageBox.Show("Registered Successfully");
+                this.Hide();
+                Login f = new Login();
+                f.ShowDialog();
             }
             else
             {

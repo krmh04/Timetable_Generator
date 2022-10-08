@@ -114,9 +114,9 @@
             this.pwd_reen_lbl.AutoSize = true;
             this.pwd_reen_lbl.Location = new System.Drawing.Point(134, 297);
             this.pwd_reen_lbl.Name = "pwd_reen_lbl";
-            this.pwd_reen_lbl.Size = new System.Drawing.Size(118, 16);
+            this.pwd_reen_lbl.Size = new System.Drawing.Size(117, 16);
             this.pwd_reen_lbl.TabIndex = 8;
-            this.pwd_reen_lbl.Text = "Reenter Password";
+            this.pwd_reen_lbl.Text = "Reenter password";
             // 
             // Register
             // 

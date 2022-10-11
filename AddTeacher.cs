@@ -29,5 +29,28 @@ namespace TimeTable_Generator
             
 
         }
+
+        private void btn_update_click(object sender, EventArgs e)
+        {
+            string query = "update TeacherTable set Teacher_Id=@id,Name=@name where Teacher_Id=@id";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_id_box.Text));
+            cmd.Parameters.AddWithValue("@name", txt_teac_name.Text);
+             con.Open();
+            int i = cmd.ExecuteNonQuery();
+            if (i > 0)
+                MessageBox.Show("Data Updated Successfully");
+        }
+
+        private void btn_t_delete_Click(object sender, EventArgs e)
+        {
+            string query = "delete TeacherTable where Teacher_Id=@id";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_id_box.Text));
+            con.Open();
+            int i = cmd.ExecuteNonQuery();
+            if (i > 0)
+                MessageBox.Show("Data Deleted Successfully");
+        }
     }
 }

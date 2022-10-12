@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="txt_steps.Text" xml:space="preserve">
+    <value>Steps to use the Time-Table Generator
+
+1. Click on the Add Course Button
+2. Add the Course Details.
+3. Click on the Add Teacher Button
+4. Add the Teacher's Details
+5. Click on the "Generate Button"
+6. View the Generated Timetable
+</value>
+  </data>
 </root>

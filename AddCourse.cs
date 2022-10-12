@@ -34,6 +34,7 @@ namespace TimeTable_Generator
             int i = cmd.ExecuteNonQuery();
             if (i > 0)
                 MessageBox.Show("Inserted Data Successfully");
+            con.Close();
          }
 
         private void btn_update_Click(object sender, EventArgs e)
@@ -47,6 +48,8 @@ namespace TimeTable_Generator
             int i = cmd.ExecuteNonQuery();
             if (i > 0)
                 MessageBox.Show("Data Updated Successfully");
+            con.Close();
+
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -58,6 +61,8 @@ namespace TimeTable_Generator
             int i = cmd.ExecuteNonQuery();
             if (i > 0)
                 MessageBox.Show("Data Deleted Successfully");
+            con.Close();
+
         }
     }
     

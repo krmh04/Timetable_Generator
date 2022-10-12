@@ -36,9 +36,9 @@ namespace TimeTable_Generator
         {
             
 
-            if (re_pwd_box.Text != string.Empty || txt_box_pwd.Text != string.Empty || txt_box_uname.Text != string.Empty)
+            if (txt_re_pwd_box.Text != string.Empty || txt_box_pwd.Text != string.Empty || txt_box_uname.Text != string.Empty)
             {
-                if (txt_box_pwd.Text == re_pwd_box.Text)
+                if (txt_box_pwd.Text == txt_re_pwd_box.Text)
                 {
                     con.Open();
                     cmd = new SqlCommand("select * from LoginTable where username='" + txt_box_uname.Text + "'", con);
@@ -102,5 +102,10 @@ namespace TimeTable_Generator
             //    }
             //}
         }
+
+       // private void pwd_reen_lbl_Click(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

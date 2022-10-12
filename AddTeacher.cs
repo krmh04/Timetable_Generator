@@ -17,7 +17,7 @@ namespace TimeTable_Generator
             InitializeComponent();
 
         }
-        SqlConnection con = new SqlConnection();
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\Timetable_generator.mdf;Integrated Security=True;Connect Timeout=30");
         SqlCommand cmd = new SqlCommand();
         SqlDataReader sdr;
         SqlDataAdapter sda = new SqlDataAdapter();
@@ -25,8 +25,16 @@ namespace TimeTable_Generator
 
         private void gen_btn_click(object sender, EventArgs e)
         {
-            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Documents\Register.mdf;Integrated Security=True;Connect Timeout=30";
-            
+            string query = "insert into TeacherTable values(@id,@name)";
+            SqlCommand cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@id", Convert.ToInt32(txt_id_box.Text));
+            cmd.Parameters.AddWithValue("@name", txt_teac_name.Text);
+
+            con.Open();
+            int i = cmd.ExecuteNonQuery();
+            if (i > 0)
+                MessageBox.Show("Inserted Data Successfully");
+            con.Close();
 
         }
 
@@ -40,6 +48,8 @@ namespace TimeTable_Generator
             int i = cmd.ExecuteNonQuery();
             if (i > 0)
                 MessageBox.Show("Data Updated Successfully");
+            con.Close();
+
         }
 
         private void btn_t_delete_Click(object sender, EventArgs e)
@@ -51,6 +61,8 @@ namespace TimeTable_Generator
             int i = cmd.ExecuteNonQuery();
             if (i > 0)
                 MessageBox.Show("Data Deleted Successfully");
+            con.Close();
+
         }
     }
 }

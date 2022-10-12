@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_generate = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -36,12 +37,15 @@
             this.btn_close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mainpanel = new System.Windows.Forms.Panel();
+            this.txt_steps = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.mainpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(60)))), ((int)(((byte)(89)))));
             this.panel1.Controls.Add(this.btn_generate);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.btn_add_teacher);
@@ -77,6 +81,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btn_add_teacher
             // 
@@ -112,9 +117,9 @@
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_close.ForeColor = System.Drawing.Color.Red;
-            this.btn_close.Location = new System.Drawing.Point(1271, 3);
+            this.btn_close.Location = new System.Drawing.Point(1274, 0);
             this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(27, 25);
+            this.btn_close.Size = new System.Drawing.Size(24, 31);
             this.btn_close.TabIndex = 4;
             this.btn_close.Text = "x";
             this.btn_close.UseVisualStyleBackColor = false;
@@ -122,7 +127,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(60)))), ((int)(((byte)(89)))));
             this.panel2.Controls.Add(this.btn_close);
             this.panel2.Location = new System.Drawing.Point(3, 2);
             this.panel2.Name = "panel2";
@@ -131,10 +136,26 @@
             // 
             // mainpanel
             // 
+            this.mainpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(60)))), ((int)(((byte)(89)))));
+            this.mainpanel.Controls.Add(this.txt_steps);
             this.mainpanel.Location = new System.Drawing.Point(181, 32);
             this.mainpanel.Name = "mainpanel";
             this.mainpanel.Size = new System.Drawing.Size(1129, 567);
             this.mainpanel.TabIndex = 6;
+            // 
+            // txt_steps
+            // 
+            this.txt_steps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(60)))), ((int)(((byte)(89)))));
+            this.txt_steps.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_steps.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_steps.ForeColor = System.Drawing.SystemColors.Info;
+            this.txt_steps.Location = new System.Drawing.Point(56, 89);
+            this.txt_steps.Multiline = true;
+            this.txt_steps.Name = "txt_steps";
+            this.txt_steps.ReadOnly = true;
+            this.txt_steps.Size = new System.Drawing.Size(600, 425);
+            this.txt_steps.TabIndex = 2;
+            this.txt_steps.Text = resources.GetString("txt_steps.Text");
             // 
             // Dashboard
             // 
@@ -151,6 +172,8 @@
             this.Text = "Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.mainpanel.ResumeLayout(false);
+            this.mainpanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -165,5 +188,6 @@
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel mainpanel;
+        private System.Windows.Forms.TextBox txt_steps;
     }
 }

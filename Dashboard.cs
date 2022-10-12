@@ -50,6 +50,11 @@ namespace TimeTable_Generator
             Application.Exit();
         }
 
-       
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Dashboard f = new Dashboard();
+            f.ShowDialog();
+        }
     }
 }

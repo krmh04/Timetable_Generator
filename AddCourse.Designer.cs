@@ -42,9 +42,11 @@
             // lbl_crs_add
             // 
             this.lbl_crs_add.AutoSize = true;
+            this.lbl_crs_add.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_crs_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(35)))), ((int)(((byte)(68)))));
             this.lbl_crs_add.Location = new System.Drawing.Point(175, 113);
             this.lbl_crs_add.Name = "lbl_crs_add";
-            this.lbl_crs_add.Size = new System.Drawing.Size(90, 16);
+            this.lbl_crs_add.Size = new System.Drawing.Size(104, 21);
             this.lbl_crs_add.TabIndex = 0;
             this.lbl_crs_add.Text = "Course Name";
             // 
@@ -68,9 +70,11 @@
             // lbl_lectures
             // 
             this.lbl_lectures.AutoSize = true;
+            this.lbl_lectures.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lectures.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(35)))), ((int)(((byte)(68)))));
             this.lbl_lectures.Location = new System.Drawing.Point(175, 182);
             this.lbl_lectures.Name = "lbl_lectures";
-            this.lbl_lectures.Size = new System.Drawing.Size(89, 16);
+            this.lbl_lectures.Size = new System.Drawing.Size(117, 21);
             this.lbl_lectures.TabIndex = 5;
             this.lbl_lectures.Text = "No of lectures";
             // 
@@ -91,9 +95,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 76);
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(35)))), ((int)(((byte)(68)))));
+            this.label1.Location = new System.Drawing.Point(175, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 16);
+            this.label1.Size = new System.Drawing.Size(83, 21);
             this.label1.TabIndex = 9;
             this.label1.Text = "Course ID";
             // 
@@ -121,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(60)))), ((int)(((byte)(89)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_update);
